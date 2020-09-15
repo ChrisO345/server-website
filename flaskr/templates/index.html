@@ -1,0 +1,39 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>server</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/server.css')}}">
+    <script src="{{ url_for('static', filename='javascript/server.js')}}"></script>
+  </head>
+  <body>
+    <div class="titlePane">
+
+    </div>
+    <ol>
+      <li>
+        <div class="computer-science-title" height="100" width="300">
+          <h2><a href="/compTest/">Computer Science</a></h2>
+        </div>
+        <div class="computer-science-middle" height="137" width="300" onclick="CompSciClick()">
+          <h4 id="findlayCompSci">Findlay - {{fin}}</h4>
+          <h4 id="mcdonaldCompSci">McDonald - {{mcd}}</h4>
+          <h4 id="flemmingCompSci">Flemming - {{flm}}</h4>
+        </div>
+        <div class="computer-science-bottom" height="57" width="300" onclick="CompSciClick()">
+
+        </div>
+      </li>
+      <li onclick="MathClick()">
+        <div class="math-title" height="100" width="300">
+          <h2><a href="https://w3schools.com">Mathematics</a></h2>
+        </div>
+        <div class="math-middle" height="137" width="300">
+
+        </div>
+        <div class="math-bottom" height="57" width="300">
+
+        </div>
+      </li>
+    </ol>
+  </body>
+</html>

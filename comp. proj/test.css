@@ -1,0 +1,89 @@
+/*dividing into box by box*/
+div { 
+    display: block;
+}
+html, body {
+    position: relative;;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height: 100%;
+    overflow: hidden;
+}
+p {
+    font-size: 10px;
+}
+.webpage { 
+    height: 100%;
+    width: auto;
+    display: block;
+}
+/*where animation sit*/
+
+.Animation {
+    background-color: aqua;
+    padding: 20px;
+    margin: auto;
+    height: 35%;/* height: 300px; */
+    max-width: 100%;
+}
+/*where question and answer is displayed*/
+.answerSection {
+    background-color: violet;
+    margin: auto;
+    max-width: 100%;
+    height: 50%/* height: 500px; */
+}
+/*where question is*/
+.question {
+    border: 10px 50px;
+    padding: 15px 20px;
+    border-style: outset;
+}
+/*answer = highlight when pointer hover over*/
+#answers{
+    width: 100%;
+    /* height: 400px; */
+    display: flex;
+    flex-wrap: wrap;   
+    align-content: center;
+    outline: 50px;
+    outline-offset: 10px;
+    border: 1px solid #c3c3c3;
+}
+.Q1 {
+    width:100%;
+    /* padding:15px 20px;
+    border: 10px 50px;  */
+    border-style: outset; 
+}
+.botton{
+    border: khaki;
+    border: 100px;
+}
+.botton:hover{
+    color: yellow;
+}
+.botton:active{
+    color:red
+}
+#blah:hover{
+    color: red;
+}
+/*bullet point answer selection*/
+
+/* .pagination {
+    display: inline-block;
+  }
+
+.breadcrumb a {
+color: black;
+float: left;
+padding: 8px 16px;
+text-decoration: none;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: yellow;
+} */

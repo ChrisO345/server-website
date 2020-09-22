@@ -1,0 +1,61 @@
+div {
+    display: block;
+}
+body, html{
+    max-width: auto;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+div.page {
+    max-width: auto;
+    height: 100%;
+    /* position: relative;
+    overflow: hidden; */
+}
+
+div.animation {
+    max-width: auto;
+    height: 50%;
+    background-color: blue;
+}
+
+div.questionAns{
+    max-width: auto;
+    height: 50%;
+    background-image: url(https://i.pinimg.com/originals/81/6d/fd/816dfd710806e20aa40a7cd8c76d2e2d.jpg);
+    background-color: white ;
+    padding-top: 20px;
+    text-align: center;
+}
+#ansQ { 
+    /* font and style */
+    text-align: center;
+
+}
+.question{
+    border-style: outset ;
+    margin-bottom: 15px;
+    font-size: 24px;
+    background-color: white;
+    padding-bottom: 4px;
+}
+div.selection{ 
+    /* add some border and shit */
+    margin-top: 5px;
+}
+.buttonAns {
+    /* border: 1px 5px 10px 20px; */
+    border-style:solid;
+    border-width:3px 5px 10px 20px;
+    border-radius: 5px;
+    width: 100%;
+    border-color: palevioletred;
+    font-size: 20px;    
+    padding: 6.5px;
+}
+.buttonAns:hover {
+    box-shadow: 0 13px 16px 0 rgba(255, 0, 0, 0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    border-style: outset ;
+  }

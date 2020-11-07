@@ -23,19 +23,27 @@ def create_app(test_config=None):
 
     @app.route('/get-post', methods=["POST", "GET"])
     def login():
+        y = open("flaskr/questions.txt", 'r')
+        q = y.read().split('\n')
+        y.close()
+        x = open("flaskr/answers.txt", 'r')
+        a = x.read().split('\n')
+        x.close()
+        q_num = random.randint(0, len(q)-1)
+        q = q[q_num]
+        a = a[q_num]
+        a = a.split(" ; ")
         if request.method == "POST":
             user = request.form["multichoice"]
-            y = open("flaskr/scores.txt", 'r')
-            d = y.read().split('\n')
-            y.close()
-            x = open("flaskr/scores.txt", 'w')
-            x.write(user)
-            x.write('\ntest1')
-            x.write('\ntest2')
-            x.close()
-            return redirect(url_for("hello"))
+            if user == "item1":
+                chosen = a[0]
+            elif user == "item2":
+                chosen = a[1]
+            elif user == "item3":
+                chosen = a[2]
+            return f"<h1>{chosen}</h1>"
         else:
-            return render_template("get_post_test.html")
+            return render_template("get_post_test.html", question=q, item=a)
 
     @app.route("/<usr>")
     def user_login(usr):

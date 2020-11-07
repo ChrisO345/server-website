@@ -40,6 +40,7 @@ div.questionAns{
     font-size: 24px;
     background-color: white;
     padding-bottom: 4px;
+    height: auto;
 }
 div.selection{ 
     /* add some border and shit */
@@ -51,6 +52,7 @@ div.selection{
     border-width:3px 5px 10px 20px;
     border-radius: 5px;
     width: 100%;
+    height: auto;
     border-color: palevioletred;
     font-size: 20px;    
     padding: 6.5px;
